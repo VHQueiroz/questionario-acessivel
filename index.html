@@ -16,16 +16,41 @@
     </h1>
     <nav>
 <ul>
-  <li><a href="student-info">INFO</a></li>
-  <li><a href="html-questions">HTML</a></li>
-  <li><a href="css-questions">CSS</a></li>
+  <li class="menu"><a href="student-info">INFO</a></li>
+  <li class='menu'><a href="html-questions">HTML</a></li>
+  <li class="menu"><a href="css-questions">CSS</a></li>
 </ul>
     </nav>
   </header>
   <main>
     <form action="https://freecodecamp.org/practice-project/accessibility-quiz" method='post'>
       <section role="region" aria-labelledby="student-info"><h2 id="student-info">Student Info</h2></section>
-      <section role="region" aria-labelledby="html-questions"><h2 id="html-questions"> Html Questions</h2></section>
+        <div class="info"><label for="name">Name<input type="text" id='name' name="name"></div>
+        <div class="info"><label for="e-mail">E-mail<input type="email" id='e-mail' name='e-mail'></div>
+        <div class="info"><label for="birthday">D.O.B<span class='sr-only'>(Date of Birth)</span><input type="date" id='birthday' name='birthday'></div>
+      
+      <section role="region" aria-labelledby="html-questions"><h2 id="html-questions"> Html Questions</h2>
+        <div class="question-block">
+          <p>1</p>
+          <fieldset class="question" name="html-question-one">
+            <legend>Você usa o código HTML há muito tempo?</legend>
+          <ul class='answers-list'>
+            <li></li>
+            <li></li>
+          </ul>
+        </fieldset>
+        </div>
+        <div class="question-block">
+          <p>2</p>
+          <fieldset class="question" name="html-question-two">
+            <legend>Já fez um projeto utilizando o HTML?</legend>
+              <ul class='answers-list'>
+                <li></li>
+                <li></li>
+              </ul>
+          </fieldset>
+        </div>
+      </section>
       <section role="region" aria-labelledby="css-questions"> <h2 id="css-questions">Css Questions</h2></section>
     </form> 
   </main>
