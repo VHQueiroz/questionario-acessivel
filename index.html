@@ -16,18 +16,18 @@
     </h1>
     <nav>
 <ul>
-  <li class="menu"><a href="student-info">INFO</a></li>
-  <li class='menu'><a href="html-questions">HTML</a></li>
-  <li class="menu"><a href="css-questions">CSS</a></li>
+  <li class="menu"><a href="#student-info" accesskey="i">INFO</a></li>
+  <li class='menu'><a href="#html-questions" accesskey="h">HTML</a></li>
+  <li class="menu"><a href="#css-questions" accesskey="c">CSS</a></li>
 </ul>
     </nav>
   </header>
   <main>
     <form action="https://freecodecamp.org/practice-project/accessibility-quiz" method='post'>
       <section role="region" aria-labelledby="student-info"><h2 id="student-info">Student Info</h2></section>
-        <div class="info"><label for="name">Name<input type="text" id='name' name="name"></div>
-        <div class="info"><label for="e-mail">E-mail<input type="email" id='e-mail' name='e-mail'></div>
-        <div class="info"><label for="birthday">D.O.B<span class='sr-only'>(Date of Birth)</span><input type="date" id='birthday' name='birthday'></div>
+        <div class="info"><label for="name">Name <input type="text" id='name' name="name"></div>
+        <div class="info"><label for="e-mail">E-mail <input type="email" id='e-mail' name='e-mail'></div>
+        <div class="info"><label for="birthday">D.O.B <span class='sr-only'>(Date of Birth)</span><input type="date" id='birthday' name='birthday'></div>
       
       <section role="region" aria-labelledby="html-questions"><h2 id="html-questions"> Html Questions</h2>
         <div class="question-block">
@@ -66,15 +66,26 @@
 
             </div>
           <div class="question-block">
-            <label for="">Do you have any questions:</label>
+            <label for="textarea">Do you have any questions:</label>
           </div>
           <div class="answer">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Text here"></textarea>
+            <textarea name="texarea" id="textarea" cols="30" rows="10" placeholder="Text here"></textarea>
+
+
 
           </div>
         </div>
       </section>
+      <button type='submit'>Send</button>
     </form> 
   </main>
+  <footer>
+    <address>
+      <a href="https://freecodecamp.org">freeCodeCamp</a> <br>
+      San Francisco <br>
+      California <br>
+      USA 
+    </address>
+  </footer>
 </body>
 </html>
